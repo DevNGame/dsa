@@ -2,16 +2,16 @@
 
 import java.net.http.HttpClient;
 
-public class HttpClientProvider {
+public class ThreadSafeSingleton {
     private static HttpClient httpClient;
 
-    private HttpClientProvider() {
+    private ThreadSafeSingleton() {
 
     }
 
     public static HttpClient getHttpClient() {
         if (httpClient == null) {
-            synchronized (HttpClientProvider.class) {
+            synchronized (ThreadSafeSingleton.class) {
                 if (httpClient == null) {
                     httpClient = HttpClient.newBuilder()
                             .version(HttpClient.Version.HTTP_1_1)

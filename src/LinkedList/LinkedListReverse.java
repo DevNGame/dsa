@@ -28,7 +28,7 @@ public class LinkedListReverse {
     }
 
     public static void main(String a[]){
-        //1->3->5->7->9
+
         Node l = new Node(5, new Node(7, new Node(9)));
         Node m = new Node(3, l);
         Node n = new Node(1, m);

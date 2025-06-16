@@ -1,4 +1,4 @@
-package DP.knapsack_similar;
+package DP.KnapsackSimilar;
 
 public class MinimumSubsetSumDiff {
 

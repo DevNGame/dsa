@@ -1,3 +1,5 @@
+package Array;
+
 public class WaterTrapped {
     //{2, 1, 5, 3, 1, 0, 4}
     //lm - 4
